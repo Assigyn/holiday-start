@@ -2,7 +2,7 @@ import styles from "./../assets/styles/components/list.module.css"
 import {useEffect, useState} from "react";
 import Card from "./Card";
 
-function List({buttons, filter}) {
+function List({buttons, filter, superHost}) {
     const url = 'https://raw.githubusercontent.com/devchallenges-io/curriculum/refs/heads/main/4-frontend-libaries/challenges/group_1/data/property-listing-data.json';
     const [list, setList] = useState([]);
     const [listFiltered, setListFiltered] = useState(list);
@@ -35,8 +35,12 @@ function List({buttons, filter}) {
             newList = newList.filter((i) => {return parseInt(i.capacity.bedroom) === parseInt(filter)});
         }
 
+        if (superHost) {
+            newList = newList.filter((i) => {  return i.superhost});
+        }
+
         setListFiltered(newList)
-    }, [list, buttons, filter])
+    }, [list, buttons, filter, superHost])
 
     return (
         <div>

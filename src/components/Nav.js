@@ -1,8 +1,9 @@
 import styles from "./../assets/styles/components/nav.module.css"
 import Button from "./Button";
 import Select from "./form/Select";
+import Checkbox from "./form/Checkbox";
 
-function Nav({buttons, setButtons, setFilter}) {
+function Nav({buttons, setButtons, setFilter, setSuperhost}) {
     const options = [
         {value: 1, text: '1 bedroom'},
         {value: 2, text: '2 bedrooms'},
@@ -16,7 +17,10 @@ function Nav({buttons, setButtons, setFilter}) {
                 })}
             </ul>
 
-            <Select id="property-select" placeholder="Property Type" options={options} setFilter={setFilter} />
+            <div className={styles.appNavForm}>
+                <Checkbox id="superhost-select" setSuperhost={setSuperhost} />
+                <Select id="property-select" placeholder="Property Type" options={options} setFilter={setFilter} />
+            </div>
         </nav>
     )
 }

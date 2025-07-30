@@ -22,3 +22,10 @@
     margin-right: 12px;
     font-weight: bold;
 }
+
+.appNavForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}

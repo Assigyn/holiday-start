@@ -1,4 +1,4 @@
-import styles from "./../../assets/styles/components/form/select.module.css"
+import styles from "./../../assets/styles/components/form.module.css"
 
 function Select({id, placeholder, options, setFilter}) {
     return(

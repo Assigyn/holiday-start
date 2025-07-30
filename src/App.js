@@ -13,13 +13,14 @@ function App() {
   ])
 
   const [filter, setFilter] = useState(null);
+  const [superHost, setSuperhost] = useState(false);
 
   return (
     <div className="appContainer">
       <Header />
         <div className="appContainerBody">
-            <Nav buttons={buttons} setButtons={setButtons} setFilter={setFilter} />
-            <List buttons={buttons} filter={filter} />
+            <Nav buttons={buttons} setButtons={setButtons} setFilter={setFilter} setSuperhost={setSuperhost}/>
+            <List buttons={buttons} filter={filter} superHost={superHost} />
         </div>
     </div>
   );
