@@ -1,0 +1,36 @@
+.appCard img {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.cardContent {
+    border: 1px solid #7E869E40 ;
+    border-top: 0;
+    margin-top: -5px;
+    padding: 20px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.cardSuperHost {
+    background-color: #20293A;
+    position: absolute;
+    margin: 8px;
+    padding: 7px 14px;
+    color: #F2F9FE;
+    border-radius: 14px;
+    font-size: 0.625rem;
+    font-weight: bold;
+}
+
+.cardContent h4 {
+    margin-top: 0;
+}
+
+.cardFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}

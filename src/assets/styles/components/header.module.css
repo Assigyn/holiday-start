@@ -1,0 +1,25 @@
+.appHeader {
+    background: url("../../img/hero-image.jpg") 0 0 no-repeat;
+    height: 620px;
+    width: 100%;
+}
+
+.appHeaderContainer {
+    padding-top: 180px;
+    padding-left: 140px;
+}
+
+h1, h2 {
+    color: #121826;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}

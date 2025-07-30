@@ -1,0 +1,12 @@
+.appBtn {
+    background-color: transparent;
+    font-size: 1rem;
+    color: #F2F9FE;
+    padding: 8px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.appBtnActive {
+    background-color: #4A5567;
+}
