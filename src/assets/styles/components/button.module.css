@@ -7,6 +7,11 @@
     border-radius: 8px;
 }
 
+.appBtn:hover {
+    background-color: #4A5567;
+    cursor: pointer;
+}
+
 .appBtnActive {
     background-color: #4A5567;
 }

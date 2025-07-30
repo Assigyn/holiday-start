@@ -5,6 +5,10 @@
     padding: 32px 40px;
     border-radius: 12px;
     border: 1px solid #7E869E40;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .appNav ul {

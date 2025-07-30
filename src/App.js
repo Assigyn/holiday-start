@@ -12,12 +12,14 @@ function App() {
       {id: 5, text: 'Switzerland', active: false},
   ])
 
+  const [filter, setFilter] = useState(null);
+
   return (
     <div className="appContainer">
       <Header />
         <div className="appContainerBody">
-            <Nav buttons={buttons} setButtons={setButtons}/>
-            <List buttons={buttons} />
+            <Nav buttons={buttons} setButtons={setButtons} setFilter={setFilter} />
+            <List buttons={buttons} filter={filter} />
         </div>
     </div>
   );

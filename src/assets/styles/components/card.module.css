@@ -1,6 +1,7 @@
 .appCard img {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
+    width: 100%;
 }
 
 .cardContent {
@@ -21,10 +22,45 @@
     border-radius: 14px;
     font-size: 0.625rem;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.cardSuperHost img {
+    width: 15px;
+    height: 15px;
 }
 
 .cardContent h4 {
-    margin-top: 0;
+    margin: 0;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardBody p {
+    color: #c7cfd8;
+}
+
+.cardCapacity {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cardCapacity .item {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    white-space: nowrap;
+    color: #F2F9FE;
 }
 
 .cardFooter {
@@ -33,4 +69,23 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    border-top: 1px solid #7E869E40;
 }
+
+.cardRating {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardPrice {
+    color: #c7cfd8;
+}
+
+.cardPrice span {
+    font-size: 1.5rem;
+    color: #F2F9FE;
+}
+

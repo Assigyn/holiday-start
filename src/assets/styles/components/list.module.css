@@ -4,3 +4,13 @@
     grid-column-gap: 32px;
     grid-row-gap: 72px;
 }
+
+h3 {
+    margin: 0 0 32px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .appList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
