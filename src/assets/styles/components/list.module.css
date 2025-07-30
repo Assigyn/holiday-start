@@ -1,3 +1,7 @@
+.appListContainer {
+    margin: 0 40px;
+}
+
 .appList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -5,12 +9,28 @@
     grid-row-gap: 72px;
 }
 
+.appListNotFound {
+    text-align: center;
+    font-size: 2rem;
+}
+
 h3 {
     margin: 0 0 32px 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .appList {
         grid-template-columns: 1fr 1fr;
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .appList {
+        grid-template-columns: 1fr;
+    }
+
+    h3 {
+        margin: 0 0 32px 20px;
     }
 }

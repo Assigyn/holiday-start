@@ -43,13 +43,17 @@ function List({buttons, filter, superHost}) {
     }, [list, buttons, filter, superHost])
 
     return (
-        <div>
+        <div className={styles.appListContainer}>
             <h3>Over 200 stays</h3>
 
             <div className={styles.appList}>
-                {listFiltered.map((item) => {
-                    return <Card key={item.id} data={item} />;
-                })}
+                {listFiltered.length > 0 ? (
+                    listFiltered.map((item) => (
+                        <Card key={item.id} data={item} />
+                    ))
+                ) : (
+                    <p className={styles.appListNotFound}>No result found</p>
+                )}
             </div>
         </div>
     )

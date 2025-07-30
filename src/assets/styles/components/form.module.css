@@ -1,5 +1,17 @@
 .appSelect {
-    background-color: red;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #7E869E40;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 170px;
+    background: transparent url("../../img/Expand_down.svg") no-repeat right 0.75rem center;
+    background-size: 1.3rem;
+}
+
+.appSelect option {
+    background-color: #242b3b;
 }
 
 .appSwitchContainer {
